@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    grid-area: header;
+}
+.about{
+    grid-area: tentang;
+}
+.tabel{
+    grid-area: tabel;
+}
+.contact {
+    grid-area: kontak;
+}
+.footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "tentang"
+    "tabel"
+    "kontak"
+    "footer";
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.item-navbar{
+    align-items: center;
+    justify-content: center;
+}
+.photo{
+    height: 300px;
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+.layanan{
+    display: none;
+}
+.tengah{
+    display: flex;
+    flex-direction: column;
+}

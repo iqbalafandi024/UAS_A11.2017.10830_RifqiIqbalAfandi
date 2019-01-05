@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    grid-area: header;
+}
+.about{
+    grid-area: tentang;
+}
+.tabel{
+    grid-area: tabel;
+}
+.contact {
+    grid-area: kontak;
+}
+.footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "tentang"
+    "tabel"
+    "kontak"
+    "footer";
+}
+.navbar{
+    display: flex;
+    height: 100px;
+}
+.item-navbar{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+}
+.item-navbar ul{
+    list-style: none;
+}
+.item-navbar ul li{
+    display: inline-block;
+    margin: 10px;
+}
+.photo{
+    height: 110vh;
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+}
+.layanan{
+    display: flex;
+    height: 110px;
+    padding: auto 20%;
+    background: blue;
+}
+.item-layanan{
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+.item-layanan img{
+    flex: 3;
+}
+.item-layanan p{
+    flex: 1;
+    color: white;
+}
+.about{
+    padding: 100px 100px;
+}
+.tengah{
+    display: flex;
+    align-items: baseline;
+
+}
+.item-about{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.item-about img{
+    position: relative;
+    width: 100%;
+}
+.item-about p{
+    text-align: left;
+}
+.tabel{
+    display: flex;
+    padding: 100px 100px;
+    justify-content: center;
+    background-color: ghostwhite;
+}
+.tabel div{
+    text-align: center;
+}
+.tabel div table,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    background-color: orangered;
+}
